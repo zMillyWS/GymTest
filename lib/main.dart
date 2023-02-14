@@ -1,3 +1,4 @@
+import 'package:application_test/TEST2.dart';
 import 'package:application_test/home.dart';
 import 'package:application_test/login.dart';
 import 'package:application_test/test.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return (const MaterialApp(
       title: 'Gym App',
-      home: LoginScreen(),
+      home: Test2(),
       debugShowCheckedModeBanner: false,
     ));
   }
