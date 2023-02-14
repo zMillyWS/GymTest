@@ -12,6 +12,19 @@ class Test2 extends StatefulWidget {
 class _Test2 extends State<Test2> {
   @override
   Widget build(BuildContext context) {
+    final emailTxt = TextField(
+          decoration: InputDecoration(
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
+              hintText: 'e-mail'),
+        ),
+        senhaTxt = TextField(
+          decoration: InputDecoration(
+              border:
+                  OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
+              hintText: 'senha'),
+        );
+
     return Material(
       child: Stack(
         children: <Widget>[
@@ -50,6 +63,22 @@ class _Test2 extends State<Test2> {
                   colors: [
                     Colors.blue,
                     Colors.red,
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.center,
+            child: Container(
+              height: 200.0,
+              width: 340.0,
+              child: Padding(
+                padding: const EdgeInsets.all(48.0),
+                child: Column(
+                  children: <Widget>[
+                    emailTxt,
+                    senhaTxt,
                   ],
                 ),
               ),
