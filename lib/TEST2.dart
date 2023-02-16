@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 
-class Test2 extends StatefulWidget {
-  const Test2({super.key});
+class Teste extends StatefulWidget {
+  const Teste({super.key});
 
   @override
-  State<Test2> createState() => _Test2();
+  State<Teste> createState() => _Teste();
 }
 
-class _Test2 extends State<Test2> {
+class _Teste extends State<Teste> {
   @override
   Widget build(BuildContext context) {
     final emailTxt = TextField(
@@ -66,6 +66,15 @@ class _Test2 extends State<Test2> {
                   ],
                 ),
               ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text("Entrar"),
+                  ),
+                ],
+              ),
             ),
           ),
           Align(
@@ -73,13 +82,15 @@ class _Test2 extends State<Test2> {
             child: Container(
               height: 200.0,
               width: 340.0,
-              child: Padding(
-                padding: const EdgeInsets.all(48.0),
-                child: Column(
-                  children: <Widget>[
-                    emailTxt,
-                    senhaTxt,
-                  ],
+              child: SingleChildScrollView(
+                child: Padding(
+                  padding: const EdgeInsets.all(48.0),
+                  child: Column(
+                    children: <Widget>[
+                      emailTxt,
+                      senhaTxt,
+                    ],
+                  ),
                 ),
               ),
             ),
