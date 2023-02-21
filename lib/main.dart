@@ -1,7 +1,8 @@
-import 'package:application_test/TEST2.dart';
-import 'package:application_test/home.dart';
-import 'package:application_test/login.dart';
-import 'package:application_test/test.dart';
+import 'package:application_test/screens/loginofc.dart';
+import 'package:application_test/testes/TEST2.dart';
+import 'package:application_test/screens/home.dart';
+import 'package:application_test/screens/login.dart';
+import 'package:application_test/testes/test.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return (const MaterialApp(
       title: 'Gym App',
-      home: LoginScreen(),
+      home: LoginScreenTwo(),
       debugShowCheckedModeBanner: false,
     ));
   }
